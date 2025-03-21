@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Inserisci Risultati</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🔑 Admin - Inserisci Risultati</h1>
 
-        <label>Squadra 1:
-            <input type="text" id="team1">
-        </label>
-        <label>Gol Squadra 1:
-            <input type="number" id="score1">
-        </label>
+    <h1>Inserisci Risultato</h1>
+    <input type="text" id="team1" placeholder="Squadra 1">
+    <input type="number" id="score1" placeholder="Gol Squadra 1">
+    <input type="text" id="team2" placeholder="Squadra 2">
+    <input type="number" id="score2" placeholder="Gol Squadra 2">
+    <button id="saveResult">Salva Risultato</button>
 
-        <label>Squadra 2:
-            <input type="text" id="team2">
-        </label>
-        <label>Gol Squadra 2:
-            <input type="number" id="score2">
-        </label>
+    <h2>Risultati Inseriti</h2>
+    <table id="matchResults" border="1">
+        <thead>
+            <tr>
+                <th>Squadra 1</th>
+                <th>Risultato</th>
+                <th>Squadra 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Qui verranno caricati i risultati -->
+        </tbody>
+    </table>
 
-        <button id="saveResult">Salva Risultato</button>
-        
-        <a href="index.html" class="back-link">🔙 Torna alla Home</a>
-    </div>
-
-<script type="module" src="script.js"></script>
+    <!-- Firebase SDK e script -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
