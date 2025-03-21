@@ -82,4 +82,13 @@ function updateStandingsTable(standings) {
                         <td>${team}</td>
                         <td>${stats.points}</td>
                         <td>${stats.goalsFor}</td>
-                
+                        <td>${stats.goalsAgainst}</td>
+                    </tr>`;
+        standingsTable.innerHTML += row;
+    });
+
+    console.log("✅ Classifica aggiornata:", sortedTeams);
+}
+
+// Carica i dati quando la pagina è pronta
+window.onload = loadMatches;
