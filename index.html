@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Notturno Ponte</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <h1>Il Notturno Ponte</h1>
+
+    <h2>Risultati delle Partite</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Squadra 1</th>
+                <th>Risultato</th>
+                <th>Squadra 2</th>
+            </tr>
+        </thead>
+        <tbody id="matchResults">
+            <!-- Qui verranno caricati i risultati -->
+        </tbody>
+    </table>
+
+    <h2>Classifica Generale</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Squadra</th>
+                <th>Punti</th>
+                <th>Gol Fatti</th>
+                <th>Gol Subiti</th>
+            </tr>
+        </thead>
+        <tbody id="standings">
+            <!-- Qui verrà mostrata la classifica -->
+        </tbody>
+    </table>
+
+    <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
-    <script defer src="index.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        table { width: 80%; margin: auto; border-collapse: collapse; }
-        th, td { border: 1px solid black; padding: 8px; }
-        th { background-color: #f2f2f2
+
+    <!-- Il tuo file index.js -->
+    <script src="index.js" defer></script>
+
+</body>
+</html>
