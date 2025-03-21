@@ -1,15 +1,15 @@
-// Importiamo Firebase
+// Importa Firebase dal CDN
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
 
-// Configura Firebase (SOSTITUISCI QUESTI DATI con quelli del tuo progetto Firebase)
+// Configura Firebase (usando i tuoi dati reali)
 const firebaseConfig = {
-  apiKey: "AIzaSyAFdch6xO7a2OSnfYMjDFbwZM_tAWQO-uQ",
-  authDomain: "notturnoponte.firebaseapp.com",
-  projectId: "notturnoponte",
-  storageBucket: "notturnoponte.firebasestorage.app",
-  messagingSenderId: "340129095012",
-  appId: "1:340129095012:web:98b87c491cccaf2724ae71"
+    apiKey: "AIzaSyAFdch6xO7a2OSnfYMjDFbwZM_tAWQO-uQ",
+    authDomain: "notturnoponte.firebaseapp.com",
+    projectId: "notturnoponte",
+    storageBucket: "notturnoponte.appspot.com",  // 🔹 CORRETTO
+    messagingSenderId: "340129095012",
+    appId: "1:340129095012:web:98b87c491cccaf2724ae71"
 };
 
 // Inizializza Firebase
