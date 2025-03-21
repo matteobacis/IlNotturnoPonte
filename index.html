@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Notturno Ponte - Torneo</title>
+    <title>Il Notturno Ponte - Classifica</title>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
+    <h1>Il Notturno Ponte</h1>
 
-    <h1>Risultati del Torneo</h1>
-    <table id="matchResults" border="1">
+    <h2>Risultati delle Partite</h2>
+    <table border="1">
         <thead>
             <tr>
                 <th>Squadra 1</th>
                 <th>Risultato</th>
-                <th>Squadra 2
+                <th>Squadra 2</th>
+            </tr>
+        </thead>
+        <tbody id="matchResults"></tbody>
+    </table>
+
+    <h2>Classifica Generale</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Squadra</th>
+                <th>Punti</th>
+                <th>Gol Fatti</th>
+                <th>Gol Subiti</th>
+            </tr>
+        </thead>
+        <tbody id="standings"></tbody>
+    </table>
+
+</body>
+</html>
