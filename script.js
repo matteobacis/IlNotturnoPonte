@@ -4,12 +4,12 @@ import { getFirestore, collection, addDoc, getDocs, query, orderBy } from "https
 
 // Configura Firebase (SOSTITUISCI QUESTI DATI con quelli del tuo progetto Firebase)
 const firebaseConfig = {
-    apiKey: "TUO_API_KEY",
-    authDomain: "TUO_AUTH_DOMAIN",
-    projectId: "TUO_PROJECT_ID",
-    storageBucket: "TUO_STORAGE_BUCKET",
-    messagingSenderId: "TUO_MESSAGING_SENDER_ID",
-    appId: "TUO_APP_ID"
+  apiKey: "AIzaSyAFdch6xO7a2OSnfYMjDFbwZM_tAWQO-uQ",
+  authDomain: "notturnoponte.firebaseapp.com",
+  projectId: "notturnoponte",
+  storageBucket: "notturnoponte.firebasestorage.app",
+  messagingSenderId: "340129095012",
+  appId: "1:340129095012:web:98b87c491cccaf2724ae71"
 };
 
 // Inizializza Firebase
