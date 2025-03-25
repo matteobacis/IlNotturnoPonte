@@ -4,50 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Notturno Ponte</title>
-    <style>
-        table { width: 100%; border-collapse: collapse; }
-        th, td { border: 1px solid black; padding: 8px; text-align: center; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Il Notturno Ponte</h1>
-
-    <h2>Risultati delle Partite</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Squadra 1</th>
-                <th>Risultato</th>
-                <th>Squadra 2</th>
-            </tr>
-        </thead>
-        <tbody id="matchResults">
-            <!-- Qui verranno caricati i risultati -->
-        </tbody>
-    </table>
-
-    <h2>Classifica Generale</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Squadra</th>
-                <th>Punti</th>
-                <th>Gol Fatti</th>
-                <th>Gol Subiti</th>
-            </tr>
-        </thead>
-        <tbody id="standings">
-            <!-- Qui verrà mostrata la classifica -->
-        </tbody>
-    </table>
-
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
-
-    <!-- Il tuo file index.js -->
-    <script src="index.js" defer></script>
-
+    <header>
+        <h1>Il Notturno Ponte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partite.html">Partite</a></li>
+                <li><a href="classifica.html">Classifica</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Benvenuti al Torneo di Calcio a 6 "Il Notturno Ponte"</h2>
+            <p>Informazioni generali sul torneo...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Il Notturno Ponte</p>
+    </footer>
 </body>
 </html>
