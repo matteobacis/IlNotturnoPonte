@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifica - Il Notturno Ponte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Il Notturno Ponte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partite.html">Partite</a></li>
+                <li><a href="classifica.html">Classifica</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Classifica Generale</h2>
+            <table id="tabella-classifica">
+                <thead>
+                    <tr>
+                        <th>Posizione</th>
+                        <th>Squadra</th>
+                        <th>Punti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- La classifica verrà inserita qui da script.js -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Il Notturno Ponte</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
